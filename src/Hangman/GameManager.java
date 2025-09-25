@@ -23,7 +23,7 @@ public class GameManager {
         current_word = wordCreator.CreateWord();
         System.out.println("The game has chosen a word.");
         open_indexes = new boolean[current_word.length()];
-        System.out.println("secret word " + current_word);
+
         lives = 7;
         guesess = 0;
         opened_letters = 0;
@@ -54,8 +54,8 @@ public class GameManager {
                 System.out.println("You barely made it! Congratulations!");
 
             } else {
+                System.out.println("If you'd like to know, your word is " + current_word);
                 System.out.println("Hang him without remorse!");
-
             }
         }
         System.out.println("Actually, if you want to play another game, type 1. If you want to quit, type 2");
