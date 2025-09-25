@@ -1,9 +1,5 @@
 package Hangman;
 
-
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.util.Objects;
 import java.util.Scanner;
 
 public class GameManager {
@@ -13,7 +9,6 @@ public class GameManager {
     private int guesess;
     private int opened_letters;
     private boolean[] open_indexes;
-
 
     private final Drawer drawer = new Drawer();
 
@@ -54,7 +49,7 @@ public class GameManager {
                 System.out.println("You barely made it! Congratulations!");
 
             } else {
-                System.out.println("If you'd like to know, your word is " + current_word);
+                System.out.println("If you'd like to know, your word is % " + current_word + " %");
                 System.out.println("Hang him without remorse!");
             }
         }

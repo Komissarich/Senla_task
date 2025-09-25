@@ -1,9 +1,8 @@
 package Hangman;
-import java.net.URI;
 
+import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
 import java.net.http.HttpResponse;
 
 public class WordCreator {
@@ -11,6 +10,7 @@ public class WordCreator {
 
     public String CreateWord() {
         try {
+
             HttpClient client = HttpClient.newHttpClient();
             HttpRequest request = HttpRequest.newBuilder()
                     .uri(URI.create("https://random-word-api.herokuapp.com/word"))
